@@ -10,6 +10,7 @@ module.exports.login = async function (req,res){
                 message : "Token Created Successfully",
                 data : {
                     token: jwt.sign(user.toJSON(), 'EncryptionKey', { expiresIn: 100000000 }),
+                    //Created the token to be provided to the user
                 }
                 
             });
@@ -25,3 +26,4 @@ module.exports.login = async function (req,res){
 
     }
 }
+//Controller to login the doctor

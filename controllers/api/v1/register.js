@@ -16,6 +16,7 @@ module.exports.doctor = async function (req,res){
         });
     }
 }
+//Controller Added to register doctor
 
 module.exports.patient = async function(req,res){
     try{
@@ -25,6 +26,7 @@ module.exports.patient = async function(req,res){
                 message: "The submit phone number already exists",
                 data : verify,
             });
+            //If the phoneNo already exists
         }
         let user = await PatientReference.create({PhoneNo : req.body.PhoneNo , name : req.body.name , doctor : req.user._id});
         return res.status(200).json({
@@ -40,3 +42,4 @@ module.exports.patient = async function(req,res){
         });
     }
 }
+//Controller added to register patient

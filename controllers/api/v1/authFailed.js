@@ -3,3 +3,4 @@ module.exports.authFailed = function (req,res){
         message: "Invalid UserName/Password"
     });
 }
+//Controller created if authentication fails

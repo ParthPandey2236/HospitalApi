@@ -20,7 +20,9 @@ const Schema = mongoose.Schema({
         required: true,
     }
 });
+//Created Schema for PatientDetails
 
 const CollectionReference = mongoose.model('PatientDetails',Schema);
+//Named the collection as PatientDetails
 
 module.exports = CollectionReference;

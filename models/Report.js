@@ -15,7 +15,9 @@ const Schema = mongoose.Schema({
         ref: 'PatientDetails',
     }
 });
+//Created schema for report
 
 const CollectionSchema = mongoose.model('Report',Schema);
+//Named the collection as Report
 
 module.exports = CollectionSchema;

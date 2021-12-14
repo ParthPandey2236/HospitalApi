@@ -9,6 +9,7 @@ module.exports.createReport =async function(req,res){
         let reports = await ReportReference.create({status : req.body.status , date : `${new Date(Date.now()).toLocaleDateString().toString()}` , patient : req.params.id});
         console.log('lessee',reports);
         await patient.report.push(reports);
+        //report reference added to the patient's database
         await patient.save();
         return res.status(200).json({
             message : "Report Generated Successfully"
@@ -20,6 +21,7 @@ module.exports.createReport =async function(req,res){
         });
     }
 }
+//Controller added to create report
 
 module.exports.allReports = async function(req,res){
     try{
@@ -35,6 +37,7 @@ module.exports.allReports = async function(req,res){
         });
     }
 }
+//Controller to get all report of a specific patient
 
 module.exports.statusVise = async function(req,res){
     try{
@@ -50,3 +53,4 @@ module.exports.statusVise = async function(req,res){
         });
     }
 }
+//Controller to get the report of all the patients with respect to status

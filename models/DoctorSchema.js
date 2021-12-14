@@ -14,7 +14,9 @@ const Schema  = mongoose.Schema({
         required : true,
     }
 });
+//created schema for doctorDetails
 
 const CollectionReference = mongoose.model('DoctorDetails',Schema);
+//named the collection as DoctorDetails
 
 module.exports = CollectionReference;
