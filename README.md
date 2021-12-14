@@ -1,7 +1,7 @@
 <h1> How to use the api ?<h1>
 <h3> Register Doctor</h3>
 <h4>Api to be used (POST): https://hospital-check.herokuapp.com/api/v1/doctors/register <h4>
-<h5> Pass the following in the body { "email" : <"email">, "password" : <"password">, "name" : <"name">s}</h5>
+<h5> Pass the following in the body { "email" : <"email">, "password" : <"password">, "name" : <"name">}</h5>
 <h5> If success { "message": "User Created" } will be returned<h5>
 
 <h3> Login Doctor </h3>
