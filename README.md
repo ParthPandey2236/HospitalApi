@@ -6,7 +6,7 @@
 
 <h3> Login Doctor </h3>
 <h4> Api to be used (POST): https://hospital-check.herokuapp.com/api/v1/doctors/login </h4>
-<h5> Pass the following in the body {"email" : "parthpandey2236@gmail.com","password" : "123456789"}</h5>
+<h5> Pass the following in the body {"email" : <"email">,"password" : <"password">}</h5>
 <h5> If success { "message": "Token Created Successfully","data": { "token": <"token"> } }</h5>
 
 <h3> Register a Patient </h3>
