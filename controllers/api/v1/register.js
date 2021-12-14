@@ -28,7 +28,10 @@ module.exports.patient = async function(req,res){
         }
         let user = await PatientReference.create({PhoneNo : req.body.PhoneNo , name : req.body.name , doctor : req.user._id});
         return res.status(200).json({
-            message: "User Created"
+            message: "User Created",
+            data : {
+                patientId : user._id
+            }
         });
     }
     catch(err){
