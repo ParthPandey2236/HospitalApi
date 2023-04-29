@@ -5,12 +5,6 @@ const Schema = mongoose.Schema({
         type : String,
         required : true,
     },
-    report: [
-        {
-            type: mongoose.Schema.Types.ObjectId,
-            ref: 'Report',
-        }
-    ],
     doctor : {
         type : mongoose.Schema.Types.ObjectId,
         ref: 'DoctorDetails'
@@ -18,7 +12,11 @@ const Schema = mongoose.Schema({
     name : {
         type: String,
         required: true,
-    }
+    },
+    gender : {
+        type: String,
+    },
+    
 });
 //Created Schema for PatientDetails
 

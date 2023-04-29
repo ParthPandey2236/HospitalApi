@@ -28,7 +28,8 @@ module.exports.patient = async function(req,res){
             });
             //If the phoneNo already exists
         }
-        let user = await PatientReference.create({PhoneNo : req.body.PhoneNo , name : req.body.name , doctor : req.user._id});
+        console.log(req.body.doctor_id);
+        let user = await PatientReference.create({PhoneNo : req.body.PhoneNo , name : req.body.name , doctor : req.body.doctor_id,gender : req.body.gender, age:Number(req.body.age)});
         return res.status(200).json({
             message: "User Created",
             data : {

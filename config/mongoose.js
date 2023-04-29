@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/HospitalApi");
+mongoose.connect(process.env.MONGODB_URI||"mongodb://localhost/AutismDetector");
 //mongoose connected to the database
 
 const db = mongoose.connection;

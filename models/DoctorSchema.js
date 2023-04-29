@@ -12,7 +12,16 @@ const Schema  = mongoose.Schema({
     name : {
         type : String,
         required : true,
-    }
+    },
+    otp: {
+        type : Number,
+    },
+    report: [
+        {
+            type: mongoose.Schema.Types.ObjectId,
+            ref: 'Report',
+        }
+    ],
 });
 //created schema for doctorDetails
 

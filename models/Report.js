@@ -13,7 +13,7 @@ const Schema = mongoose.Schema({
     patient : {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'PatientDetails',
-    }
+    },
 });
 //Created schema for report
 
